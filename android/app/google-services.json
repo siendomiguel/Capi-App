@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "980437655977",
+    "project_id": "capideveloper-6078c",
+    "storage_bucket": "capideveloper-6078c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980437655977:android:4a978ac8b71a6de0cfe4b8",
+        "android_client_info": {
+          "package_name": "com.mycompany.capiapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFOlRX0hfMsQcGsyvdul5PfjQOSJnOhHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

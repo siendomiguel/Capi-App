@@ -1,0 +1,41 @@
+import '/backend/api_requests/api_calls.dart';
+import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import 'acciones_equipo_widget.dart' show AccionesEquipoWidget;
+import 'package:flutter/material.dart';
+
+class AccionesEquipoModel extends FlutterFlowModel<AccionesEquipoWidget> {
+  ///  Local state fields for this component.
+
+  List<DocumentReference> friendsList = [];
+  void addToFriendsList(DocumentReference item) => friendsList.add(item);
+  void removeFromFriendsList(DocumentReference item) =>
+      friendsList.remove(item);
+  void removeAtIndexFromFriendsList(int index) => friendsList.removeAt(index);
+  void insertAtIndexInFriendsList(int index, DocumentReference item) =>
+      friendsList.insert(index, item);
+  void updateFriendsListAtIndex(
+          int index, Function(DocumentReference) updateFn) =>
+      friendsList[index] = updateFn(friendsList[index]);
+
+  ///  State fields for stateful widgets in this component.
+
+  // Stores action output result for [Firestore Query - Query a collection] action in Container widget.
+  ChatsRecord? queryChat;
+  // Stores action output result for [Backend Call - API (Create Thread ID)] action in Container widget.
+  ApiCallResponse? createThreadId;
+  // Stores action output result for [Backend Call - Create Document] action in Container widget.
+  ChatsRecord? newChatThread1;
+  // Stores action output result for [Backend Call - Read Document] action in Container widget.
+  ServiciosRecord? dataService;
+  // Stores action output result for [Backend Call - Read Document] action in Container widget.
+  UsersRecord? dataDoctor;
+  // Stores action output result for [Backend Call - Create Document] action in Container widget.
+  NotificacionesRecord? newNotificacion;
+
+  @override
+  void initState(BuildContext context) {}
+
+  @override
+  void dispose() {}
+}

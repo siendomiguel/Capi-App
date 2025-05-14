@@ -1,0 +1,228 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "chats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "users",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "last_message_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "clinicas",
+          "arrayConfig": "CONTAINS"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "clinica",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "chat_messages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "chat",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "timestamp",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "role",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "clinicas",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "created_time",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "citas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "paciente",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "clinica",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "doctor",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaCIta",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "citas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "paciente",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "clinica",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "estado",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaCIta",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "users",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "clinica",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "display_name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "citas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "doctor",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaCIta",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "citas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "clinica",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "paciente",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaCIta",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "consulta",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "clinica",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaConsulta",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "citas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "clinica",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaCIta",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "citas",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "paciente",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "fechaCIta",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "chats",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "clinica",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "last_message_time",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}
